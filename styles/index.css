@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: .3s all;
 }
 
 ::selection{
@@ -42,14 +43,13 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #242424;
-  height: 200vh;
 }
 
 h1 {
   font-family: "Signika";
   font-weight: 700;
   font-size: 40px;
-  line-height: 48;
+  line-height: 48px;
   color: #3a3a3a;
   margin-bottom: 5px;
   text-transform: capitalize;
@@ -92,6 +92,7 @@ img{
 
 a{
   text-decoration: none;
+  color: inherit;
 }
 
 li{
@@ -104,6 +105,24 @@ li{
   padding: 35px 15px;
   margin: auto;
 }
+
+  .heading-container{
+    text-align: center;
+  }
+
+  .heading-container h1{
+    color: #151515;
+  }
+
+  .heading-container p{
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+    color: #808080;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+  }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   h1 {
@@ -165,4 +184,7 @@ li{
     font-size: 14px;
     line-height: 17px;
   }
+    .heading-container p{
+      width: 90%;
+    }
 }
