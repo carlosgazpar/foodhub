@@ -5,36 +5,8 @@
   margin-top: 45px;
 }
 
-.most-popular-item-img{
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.most-popular-item-img:hover img{
-  opacity: .9;
-  transform: scale3d(1.1,1.1,1);
-}
-
-.most-popular-item h4{
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  color: #151515;
-}
-
-.most-popular-item p{
-  color: #606060;
-  display: flex;
-  margin-top: 5px;
-}
-
-.most-popular-item h4:hover, .most-popular-item p:hover{
-  color: #528f2d;
-}
-
-.most-popular-item p::before{
-  content: '';
+.most-popular-cards .card-item p::before {
+  content: "";
   width: 15px;
   height: 15px;
   display: block;
@@ -42,6 +14,7 @@
   background-repeat: no-repeat;
   margin-right: 5px;
 }
+
 
 @media screen and (max-width:767px){
   .most-popular-cards{
