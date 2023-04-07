@@ -1,0 +1,121 @@
+.video-recipes-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px 30px;
+  margin-top: 45px;
+}
+
+.video-recipes-cards .card-item:first-child {
+  grid-column: 1/2;
+  grid-row: 1/6;
+}
+
+.video-recipes-cards .card-item:first-child h4 {
+  font-size: 29px;
+  line-height: 40px;
+}
+
+.video-recipes-cards .card-item:not(:first-child) {
+  display: flex;
+  gap: 30px;
+}
+
+.video-recipes-cards .card-item:not(:first-child) .card-item-img {
+  width: 25%;
+  max-height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-recipes-cards .card-item .card-item-img{
+  position: relative;
+}
+
+.video-recipes-cards .card-item .card-item-play{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 25px;
+  height: 30px;
+  filter: invert();
+}
+
+.video-recipes-cards .card-item:first-child .card-item-play{
+  width: 38px;
+  height: 45px;
+}
+
+.video-recipes-cards .card-item:not(:first-child) .card-item-text {
+  width: 75%;
+}
+
+.video-recipes-cards .card-item .tag {
+  margin-top: 10px;
+  margin-right: 10px;
+  display: inline-flex;
+}
+
+.video-recipes-cards .card-item .tag::after {
+  display: inline-flex;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  content: "";
+  height: 14px;
+  filter: invert();
+}
+
+.video-recipes-cards .card-item .tag-rating::after {
+  background-image: url(../../img/icons/star.svg);
+  width: 18px;
+}
+
+.video-recipes-cards .card-item .tag-steps::after {
+  background-image: url(../../img/icons/check.svg);
+  width: 19px;
+}
+
+.video-recipes-cards .card-item .tag-time::after {
+  background-image: url(../../img/icons/clock.svg);
+  width: 17px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .video-recipes-cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .video-recipes-cards .card-item:first-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .video-recipes-cards .card-item h4,  .video-recipes-cards .card-item:first-child h4 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .video-recipes-cards .card-item:not(:first-child),
+  .video-recipes-cards .card-item:first-child {
+    display: block;
+  }
+
+  .video-recipes-cards .card-item:not(:first-child) .card-item-img,
+  .video-recipes-cards .card-item:first-child .card-item-img {
+    width: 100%;
+    max-height: 150px;
+  }
+
+  .video-recipes-cards .card-item:not(:first-child) .card-item-text,
+  .video-recipes-cards .card-item:first-child .card-item-text {
+    width: 100%;
+  }
+  .video-recipes-cards .card-item .card-item-play{
+    width: 38px;
+    height: 45px;
+    
+  }
+  
+}
