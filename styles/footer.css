@@ -1,0 +1,30 @@
+footer{
+  background-color: #528f2d;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: auto;
+  padding: .8em 0;
+}
+
+footer .container p{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 767px){
+  footer .container{
+    display: block;
+    text-align: center;
+  }
+}
+
+footer .container p{
+  font-size: 12px;
+  line-height: 18px;
+  margin: 10px 0;
+}
