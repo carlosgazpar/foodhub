@@ -1,0 +1,36 @@
+.not-found{
+  text-align: center;
+}
+.not-found img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.not-found h2{
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 65px;
+  color: #3a3a3a;
+}
+
+.not-found p{
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  color: #606060;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px){
+  .not-found img{
+    width: 100%;
+  }
+  .not-found h2{
+    font-size: 23px;
+    line-height: 25px;
+  }
+}
+
