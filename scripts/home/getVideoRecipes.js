@@ -8,7 +8,6 @@ fetch("https://www.themealdb.com/api/json/v1/1/filter.php?i=beef")
         .then((response) => response.json())
         .then((response) => {
           const recipeInfo = response.meals[0];
-          console.log(recipeInfo)
           const cardsContainer = document.querySelector(".video-recipes-cards");
           const cardItem =
             `<a class="card-item">
