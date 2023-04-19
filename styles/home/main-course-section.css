@@ -1,0 +1,47 @@
+.main-course-section .main-course-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; 
+  margin-top: 45px;
+}
+
+.main-course-section .main-course-cards .card-item-img{
+  max-height: 242px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-course-section .main-course-cards .card-item-img h4{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  background: linear-gradient(to top,rgba(0,0,0,.8) 0%,rgba(0,0,0,.35) 50%,rgba(0,0,0,0) 100%,rgba(0,0,0,0) 100%);
+  padding: 20px 20px 17px;
+  width: 100%;
+}
+
+.main-course-gallery{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 53px;
+  margin-bottom: 60px;
+}
+
+
+@media screen and (max-width:991px){
+  .main-course-section .main-course-cards{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+@media screen and (max-width:767px){
+  .main-course-gallery{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
