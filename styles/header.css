@@ -1,0 +1,44 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 10px 0px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+header .header-logo {
+  flex: 1;
+  padding-left: 15px;
+}
+header .header-logo img {
+  max-width: 220px;
+  margin: 18px 0px;
+}
+header .header-menu ul {
+  display: flex;
+  gap: 25px;
+}
+header .header-menu ul li {
+  color: white;
+  font-size: 15px;
+  line-height: 38px;
+  font-weight: 700;
+}
+header .header-icons {
+  display: flex;
+  gap: 15px;
+}
+header .header-icons a:first-child img {
+  max-width: 16px;
+}
+header .header-icons a:last-child img {
+  max-width: 17px;
+}
+header .header-icons a img {
+  max-width: 20px;
+}
+
+/*# sourceMappingURL=header.css.map */

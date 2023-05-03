@@ -1,0 +1,50 @@
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 10px 0px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  .header-logo{
+    flex: 1;
+    padding-left: 15px;
+    img{
+      max-width: 220px;
+      margin: 18px 0px;
+    }
+  }
+  .header-menu{
+    ul{
+      display: flex;
+      gap: 25px;
+      li{
+        color: white;
+        font-size: 15px;
+        line-height: 38px;
+        font-weight: 700;
+      }
+    }
+  }
+  .header-icons{
+    display: flex;
+    gap: 15px;
+    a{
+      &:first-child{
+        img{
+          max-width: 16px;
+        }
+      }
+      &:last-child{
+        img{
+          max-width: 17px;
+        }
+      }
+      img{
+        max-width: 20px;
+      }
+    }
+  }
+}
