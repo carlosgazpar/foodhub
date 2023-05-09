@@ -36,7 +36,26 @@
             <a href="">Recipes</a>
           </li>
           <li>
-            <a href="">Pages</a>
+            <div class="menu-dropdown-content">
+              <a href="">Pages</a>
+              <button class="menu-dropdown-trigger">
+                <img src="img/icons/angle-down.svg" alt="">
+              </button>
+            </div>
+            <ul class="menu-dropdown">
+              <li>
+                <a href="">About us</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+              <li>
+                <a href="">How it works</a>
+              </li>
+              <li>
+                <a href="">404 Error Page</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="">Blog</a>
@@ -60,7 +79,13 @@
           <img src="img/icons/basket-shopping.svg" alt="Card" title="Card">
         </a>
       </div>
-      <div></div>
+      <div class="header-hamburger-menu">
+        <button class="hamburger-trigger" id="hamburger-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
   <!--  inicio de seccion principal-->
     <main class="main-section">
@@ -216,7 +241,8 @@
     <script src="scripts/home/getCakesRecipes.js"></script>
     <script src="scripts/home/getMainCourse.js"></script>
     <script src="scripts/home/getMainCourseGallery.js"></script>
-
+    
+    <script src="scripts/menu.js"></script>
     <script src="scripts/footer.js"></script>
   </body>
 </html>

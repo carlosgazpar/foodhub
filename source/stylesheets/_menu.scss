@@ -1,0 +1,59 @@
+header{
+  .header-menu{
+    li{
+      &:hover{
+        .menu-dropdown{
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(5%);
+        }
+      }
+      .menu-dropdown{
+        position: absolute;
+        display: block;
+        background-color: white;
+        padding: 17px 25px;
+        border-radius: 5px;
+        width: 180px;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(30%);
+        li{
+          color: #151515;
+          font-size: 14px;
+          transition: 250ms all;
+          &:hover{
+            color: #528f2d;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px){
+  header{
+    .header-menu{
+      li{
+        &:hover{
+          .menu-dropdown{
+            transform: translateY(0%);
+          }
+        }
+        .menu-dropdown{
+          position: relative;
+          display: none;
+          background-color: transparent;
+          padding: 0;
+          width: 100%;
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+          li{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
