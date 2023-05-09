@@ -23,6 +23,70 @@
     <link rel="stylesheet" href="styles/home/recipes-category-section.css" />
   </head>
   <body>
+    <header>
+      <div class="header-logo">
+        <a href=""><img src="img/logo.png" alt="logo" title="logo"></a>
+      </div>
+      <div class="header-menu">
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Recipes</a>
+          </li>
+          <li>
+            <div class="menu-dropdown-content">
+              <a href="">Pages</a>
+              <button class="menu-dropdown-trigger">
+                <img src="img/icons/angle-down.svg" alt="">
+              </button>
+            </div>
+            <ul class="menu-dropdown">
+              <li>
+                <a href="">About us</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+              <li>
+                <a href="">How it works</a>
+              </li>
+              <li>
+                <a href="">404 Error Page</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Blog</a>
+          </li>
+          <li>
+            <a href="">Shop</a>
+          </li>
+          <li>
+            <a href="">Shortcodes</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-icons">
+        <a href="">
+          <img src="img/icons/serch.svg" alt="Search" title="Search">
+        </a>
+        <a href="">
+          <img src="img/icons/user-plus.svg" alt="Login" title="Login">
+        </a>
+        <a href="">
+          <img src="img/icons/basket-shopping.svg" alt="Card" title="Card">
+        </a>
+      </div>
+      <div class="header-hamburger-menu">
+        <button class="hamburger-trigger" id="hamburger-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
   <!--  inicio de seccion principal-->
     <main class="main-section">
       <div class="container">
@@ -177,7 +241,8 @@
     <script src="scripts/home/getCakesRecipes.js"></script>
     <script src="scripts/home/getMainCourse.js"></script>
     <script src="scripts/home/getMainCourseGallery.js"></script>
-
+    
+    <script src="scripts/menu.js"></script>
     <script src="scripts/footer.js"></script>
   </body>
 </html>
